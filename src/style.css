@@ -11,14 +11,21 @@
     --header-background-color: rgba(22, 21, 21, 0.8);
 }
 
+button {
+    cursor: pointer;
+}
+
 header {
-    min-height: 300px;
     background-color: rgba(255, 0, 0, 0,4);
 }
 
 #eng-title {
     font-size: 50px;
     
+}
+
+#content {
+    min-height: calc(100vh - 200px);
 }
 
 #title {
@@ -51,8 +58,7 @@ header {
 }
 
 .picture{
-    min-height: 100vh;
-    background-image: url(./yakiniku.png);
+    background-image: url(./yakiniku.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,7 +68,42 @@ header {
 
 .nav-button {
     background-color: transparent;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
     color: white;
     width: 90px;
+    
+    border: none;
+}
+
+.nav-button:hover {
+    border-bottom: solid white 1px; 
+}
+
+
+#home-section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+    font-size: 25px;
+    gap: 55px;
+}
+
+.slogan {
+    padding: 10px;
+}
+
+#eng-slogan {
+    border-bottom: solid 1px white;
+}
+
+#booking {
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: white solid 1px;
 }
