@@ -5,14 +5,14 @@ module.exports = {
     entry: './src/index.js',
     mode: 'development',
     output: {
-        filename: '[name].js',
+        filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
 
-    devServer: {
-        static: './dist',
-    },
+    // devServer: {
+    //     static: './dist',
+    // },
 
     plugins: [
         new HtmlWebpackPlugin({
@@ -29,12 +29,12 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.(png)$/i,
+                test: /\.(png|jpg|svg|jpeg|gif)$/i,
                 type: 'asset/resource',
             }
         ],
     },
-    optimization: {
-        runtimeChunk: 'single',
-    },
+    // optimization: {
+    //     runtimeChunk: 'single',
+    // },
 };
