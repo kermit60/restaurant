@@ -9,7 +9,7 @@ const contactBuild = () => {
     const contactInfo = document.createElement('div');
     contactInfo.setAttribute('id', 'contact-info');
 
-    contactInfo.appendChild(buildContacts('ADDRESS:', '5TH WHO KNOWS AVE EAST', 1));
+    contactInfo.appendChild(buildContacts('ADDRESS:', '5TH WHO KNOWS WHERE AVE EAST', 1));
     contactInfo.appendChild(buildContacts('CONTACT:', '111-111-1111', 1));
     contactInfo.appendChild(buildContacts('HOURS:', 'MON-SUN', 2, '9AM - 9PM'));
 

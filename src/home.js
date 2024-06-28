@@ -1,3 +1,5 @@
+import loadContactBuild from "./contact";
+
 const homeBuild = () => {
     const homeSection = document.createElement('div');
     homeSection.setAttribute('id', 'home-section');
@@ -9,6 +11,10 @@ const homeBuild = () => {
     const button = document.createElement('button');
     button.textContent = 'BOOK A TABLE';
     button.setAttribute('id', 'booking');
+    button.addEventListener('click', () => {
+        loadContactBuild();
+    })
+
 
     containerDiv.appendChild(englishSlogan);
     containerDiv.appendChild(japaneseSlogan);
