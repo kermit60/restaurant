@@ -31,6 +31,12 @@ header {
     margin-top: 20px;
 }
 
+#content {
+    display: flex;
+    justify-content: center;
+    padding: 45px 25vw;
+}
+
 .container {
     background-color: rgb(0, 0, 0, 0.5);
     min-height: 100vh;
@@ -106,13 +112,15 @@ header {
 }
 
 #menu-section {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    min-width: clamp(450px, 50%, 1fr);
     background-color: rgba(42, 41, 41, 0.5);
-    min-height: 500px;
-    min-width: 444px;
+    gap: 25px;
     padding: 35px;
-    margin: 45px 20vw;
+
     border-radius: 7px;
     color: white;
 
@@ -129,15 +137,18 @@ header {
 
 #premium-beef {
     background-image: url(./premium_beef.jpg);
-    min-width: 200px;
-    
 }
 
 .menu-image {
-    display: flex;
+    
+    min-width: 200px;
+    min-height: 246px;
     border-radius: 10px;
-    align-items: center;
     background-repeat: no-repeat;
     background-size: 200px auto;
     background-position: center;
+}
+
+#contact-section {
+
 }
