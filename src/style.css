@@ -150,5 +150,42 @@ header {
 }
 
 #contact-section {
+    display: flex;
+    background-color: rgba(42, 41, 41, 0.5);
+    gap: 40px;
+    padding: 55px 100px;
+    border-radius: 7px;
+    color: white;
+}
 
+#contact-photo {
+    background-image: url(./address.png);
+    min-width: 333px;
+    min-height: 333px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 225px;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.contact-info-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.contact-info-holder > h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
 }
