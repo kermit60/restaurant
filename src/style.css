@@ -85,7 +85,6 @@ header {
 
 
 #home-section {
-    min-height: calc(100vh - 200px);
     color: white;
     display: flex;
     flex-direction: column;

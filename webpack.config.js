@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -10,9 +11,9 @@ module.exports = {
         clean: true,
     },
 
-    // devServer: {
-    //     static: './dist',
-    // },
+    devServer: {
+        static: './dist'
+    },
 
     plugins: [
         new HtmlWebpackPlugin({
@@ -34,7 +35,7 @@ module.exports = {
             }
         ],
     },
-    // optimization: {
-    //     runtimeChunk: 'single',
-    // },
+    optimization: {
+        runtimeChunk: 'single',
+    },
 };
