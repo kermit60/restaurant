@@ -210,3 +210,11 @@ header {
     letter-spacing: 2px;
 }
 
+.selected {
+    border-bottom: solid white 1px;
+}
+
+#button-group {
+    display: flex;
+    gap: 10px;
+}

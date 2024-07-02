@@ -1,4 +1,5 @@
 import loadContactBuild from "./contact";
+import reset from "./index";
 
 const homeBuild = () => {
     const homeSection = document.createElement('div');
@@ -13,6 +14,9 @@ const homeBuild = () => {
     button.setAttribute('id', 'booking');
     button.addEventListener('click', () => {
         loadContactBuild();
+        const contactButton = document.querySelector('#contact');
+        reset();
+        contactButton.classList.add('selected');
     })
 
 
